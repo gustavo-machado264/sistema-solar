@@ -2,49 +2,128 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Sistema Solar</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Sistema Solar</title>
 </head>
 
 <body>
-    <div class="conteiner">
-        <div class="sol" data-none="sol"></div>
+  <div class="container">
+    <div class="sol"></div>
 
-        <div class="orbita mercurio">
-            <div class="planeta mercurio" data-none="Mercurio"></div>
-        </div>
-
-        <div class="orbita venus">
-            <div class="planeta venus" data-none="Venus"></div>
-        </div>
-
-        <div class="orbita terra">
-            <div class="planeta terra" data-none="Terra"></div>
-        </div>
-
-        <div class="orbita marte">
-            <div class="planeta marte" data-none="Marte"></div>
-        </div>
-
-        <div class="orbita jupiter">
-            <div class="planeta jupiter" data-none="Jupiter"></div>
-        </div>
-
-
-        <div class="orbita saturno">
-            <div class="planeta saturno" data-none="saturno"></div>
-        </div>
-
-        <div class="orbita urano">
-            <div class="planeta urano" data-none="urano"></div>
-        </div>
-
-        <div class="orbita netuno">
-            <div class="planeta netuno" data-none="netuno"></div>
-        </div>
+    <div class="orbita mercurio">
+      <div class="planeta mercurio"></div>
     </div>
+    <div class="orbita venus">
+      <div class="planeta venus"></div>
+    </div>
+    <div class="orbita terra">
+      <div class="planeta terra"></div>
+    </div>
+    <div class="orbita marte">
+      <div class="planeta marte"></div>
+    </div>
+    <div class="orbita jupiter">
+      <div class="planeta jupiter"></div>
+    </div>
+    <div class="orbita saturno">
+      <div class="planeta saturno"></div>
+    </div>
+    <div class="orbita urano">
+      <div class="planeta urano"></div>
+    </div>
+    <div class="orbita netuno">
+      <div class="planeta netuno"></div>
+    </div>
+  </div>
+
+  <button class="toggle-info">ℹ️ Info</button>
+
+  <div class="info-tabela">
+    <h2>Informações do Sistema Solar</h2>
+    <p><strong>Rotação:</strong> giro do planeta em torno do seu eixo (define o dia).</p>
+    <p><strong>Translação:</strong> órbita do planeta ao redor do Sol (define o ano).</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Corpo</th>
+          <th>Tipo</th>
+          <th>Imagem</th>
+          <th>Rotação</th>
+          <th>Translação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sol</td>
+          <td>Estrela</td>
+          <td><img src="https://media1.giphy.com/media/OWDUUrk8fwYj6/giphy.gif" alt="Sol"></td>
+          <td>~25 dias</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>Mercúrio</td>
+          <td>Rochoso</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg" alt=""></td>
+          <td>58,6 dias</td>
+          <td>88 dias</td>
+        </tr>
+        <tr>
+          <td>Vênus</td>
+          <td>Rochoso</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg" alt=""></td>
+          <td>243 dias</td>
+          <td>224,7 dias</td>
+        </tr>
+        <tr>
+          <td>Terra</td>
+          <td>Rochoso</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt=""></td>
+          <td>23h 56min</td>
+          <td>365 dias</td>
+        </tr>
+        <tr>
+          <td>Marte</td>
+          <td>Rochoso</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt=""></td>
+          <td>24h 37min</td>
+          <td>687 dias</td>
+        </tr>
+        <tr>
+          <td>Júpiter</td>
+          <td>Gasoso</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt=""></td>
+          <td>9h 55min</td>
+          <td>11,9 anos</td>
+        </tr>
+        <tr>
+          <td>Saturno</td>
+          <td>Gasoso</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" alt=""></td>
+          <td>10h 40min</td>
+          <td>29,5 anos</td>
+        </tr>
+        <tr>
+          <td>Urano</td>
+          <td>Gasoso</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg" alt=""></td>
+          <td>17h 14min</td>
+          <td>84 anos</td>
+        </tr>
+        <tr>
+          <td>Netuno</td>
+          <td>Gasoso</td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg" alt=""></td>
+          <td>16h 11min</td>
+          <td>165 anos</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

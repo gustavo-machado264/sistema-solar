@@ -6,6 +6,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  font-family: sans-serif;
 
   background-image:
     radial-gradient(2px 2px at 20px 30px, white, transparent),
@@ -57,16 +58,21 @@ body {
   }
 }
 
-
 .orbita {
   position: absolute;
+  top: 50%;
+  left: 50%;
   border: 0.1em solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   animation: orbit linear infinite;
-  top: 50%;
-  left: 50%;
   transform-origin: center center;
-  transform-style: preserve-3d;
+  margin: 0;
+}
+
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .planeta {
@@ -82,119 +88,179 @@ body {
 }
 
 .orbita.mercurio {
-  width: 20em;
-  height: 20em;
-  margin-top: -10em;
-  margin-left: -10em;
+  width: 15.75em;
+  height: 15.75em;
+  margin-left: -7.875em;
+  margin-top: -7.875em;
   animation-duration: 8.7s;
 }
-
-.planeta.mercurio {
-  width: 1.2em;
-  height: 1.2em;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg');
-}
-
 .orbita.venus {
-  width: 26em;
-  height: 26em;
-  margin-top: -13em;
-  margin-left: -13em;
+  width: 20.2em;
+  height: 20.2em;
+  margin-left: -10.1em;
+  margin-top: -10.1em;
   animation-duration: 22.6s;
 }
-
-.planeta.venus {
-  width: 1.7em;
-  height: 1.7em;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg');
-}
-
 .orbita.terra {
-  width: 34em;
-  height: 34em;
-  margin-top: -17em;
-  margin-left: -17em;
+  width: 25.2em;
+  height: 25.2em;
+  margin-left: -12.6em;
+  margin-top: -12.6em;
   animation-duration: 36.5s;
 }
-
-.planeta.terra {
-  width: 2em;
-  height: 2em;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg');
-}
-
 .orbita.marte {
-  width: 42em;
-  height: 42em;
-  margin-top: -21em;
-  margin-left: -21em;
+  width: 31.5em;
+  height: 31.5em;
+  margin-left: -15.75em;
+  margin-top: -15.75em;
   animation-duration: 68.6s;
 }
-
-.planeta.marte {
-  width: 1.5em;
-  height: 1.5em;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg');
-}
-
 .orbita.jupiter {
-  width: 52em;
-  height: 52em;
-  margin-top: -26em;
-  margin-left: -26em;
+  width: 37.8em;
+  height: 37.8em;
+  margin-left: -18.9em;
+  margin-top: -18.9em;
   animation-duration: 120s;
 }
-
-.planeta.jupiter {
-  width: 4em;
-  height: 4em;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg');
-}
-
 .orbita.saturno {
-  width: 60em;
-  height: 60em;
-  margin-top: -30em;
-  margin-left: -30em;
+  width: 44.1em;
+  height: 44.1em;
+  margin-left: -22.05em;
+  margin-top: -22.05em;
   animation-duration: 250s;
 }
-
-.planeta.saturno {
-  width: 3em;
-  height: 3em;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg');
-}
-
 .orbita.urano {
-  width: 68em;
-  height: 68em;
-  margin-top: -34em;
-  margin-left: -34em;
+  width: 50.4em;
+  height: 50.4em;
+  margin-left: -25.2em;
+  margin-top: -25.2em;
   animation-duration: 300s;
 }
-
-.planeta.urano {
-  width: 2em;
-  height: 2em;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg');
-}
-
 .orbita.netuno {
-  width: 74em;
-  height: 74em;
-  margin-top: -37em;
-  margin-left: -37em;
+  width: 56.7em;
+  height: 56.7em;
+  margin-left: -28.35em;
+  margin-top: -28.35em;
   animation-duration: 350s;
 }
 
+.planeta.mercurio {
+  width: 1em;
+  height: 1em;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg');
+}
+.planeta.venus {
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg');
+}
+.planeta.terra {
+  width: 1.7em;
+  height: 1.7em;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg');
+}
+.planeta.marte {
+  width: 1.2em;
+  height: 1.2em;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg');
+}
+.planeta.jupiter {
+  width: 3em;
+  height: 3em;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg');
+}
+.planeta.saturno {
+  width: 2.5em;
+  height: 2.5em;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg');
+}
+.planeta.urano {
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg');
+}
 .planeta.netuno {
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg');
 }
 
-@keyframes orbit {
-  to {
-    transform: rotate(360deg);
-  }
+.toggle-info {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 0 10px #fff;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.toggle-info.active {
+  background-color: #ffd633;
+  box-shadow: 0 0 20px #ffcc00;
+}
+
+.toggle-info:hover {
+  background-color: #ffe066;
+}
+
+.info-tabela {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  background-color: #111;
+  color: white;
+  max-width: 400px;
+  font-family: sans-serif;
+  padding: 20px;
+  border-radius: 12px;
+  display: none;
+  overflow-y: auto;
+  max-height: 85vh;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  z-index: 999;
+  border: 1px solid #444;
+}
+
+.info-tabela.mostrar {
+  display: block;
+}
+
+.info-tabela h2 {
+  margin-top: 0;
+  color: #ffcc00;
+  text-align: center;
+}
+
+.info-tabela table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  margin-top: 10px;
+  background-color: #222;
+}
+
+.info-tabela th,
+.info-tabela td {
+  border: 1px solid #ffffff60;
+  padding: 8px;
+  text-align: center;
+}
+
+.info-tabela img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.info-tabela img:hover {
+  transform: rotate(360deg);
 }
